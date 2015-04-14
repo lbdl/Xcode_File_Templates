@@ -30,13 +30,13 @@ and [here](http://ericasadun.com/2014/06/30/building-custom-extension-templates/
 Considerations
 --------------
 
-The name of the template file is important, Bob McCune uses `___FILEBASENAME___.m` in the case of his custom GHUnit tests. This did not work for me, examination of Apples templates files led me to use the `___VARIABLE_xxx___Spec.m` as the base template file (in this case `xxx` is `productName` in the  `<key>Options</key>` array and to remove the `MainTemplateFile` key. I assume this key is redundant if there is only one template file to be considered.
+The name of the template file is important, Bob McCune uses `___FILEBASENAME___.m` in the case of his custom GHUnit tests. This did not work for me, examination of Apple's template files led me to use the `___VARIABLE_xxx___Spec.m` as the base template file (in this case `xxx` is `productName` in the  `<key>Options</key>` array) and to remove the `MainTemplateFile` key. I assume this key is redundant if there is only one template file to be considered.
 
-I could not find a way of creating an autocomplete field that populates with the classes in the project.
+I could not find a way of creating an autocomplete field that populates with the classes in the project. If you can then please do create a pull request.
 
 **NOTE** The template paths may well change at the whim of Apple. So far the local directory
   ~/Library/Developer/Xcode/Templates/
 seems a pretty reliable place for custom templates.
 
-**Further** If you need to change licenses etc then there is a good project that deals with this by [royclarkson](https://github.com/royclarkson/xcode-templates)
+**Further** If you need to change licenses etc then there is a good project that deals with this by [Roy Clarkson](https://github.com/royclarkson/xcode-templates)
 
