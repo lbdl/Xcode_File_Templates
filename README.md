@@ -13,7 +13,7 @@ Xcode will also check the following directory
 
     ~/Library/Developer/Xcode/Templates/
   
-So create that directory it does not exist. Clone the repository and move the contents into your local Templates directory,` ~/Library/Developer/Xcode/Templates/` create this if it does not exist.
+Clone the repository and move the contents into your local Templates directory,` ~/Library/Developer/Xcode/Templates/` create this directory if it does not exist.
 
 You should now have the following structure.
 
@@ -30,7 +30,7 @@ and [here](http://ericasadun.com/2014/06/30/building-custom-extension-templates/
 Considerations
 --------------
 
-The name of the template file is important, Bob McCune uses `___FILEBASENAME___.m` in the case of his custom GHUnit tests. This did not work for me, examination of Apples templates files led me to use the `___VARIABLE_productName___Spec.m` as the base template file and to remove the `MainTemplateFile` key. I assume this key is redundant if there is only one template file to be considered. 
+The name of the template file is important, Bob McCune uses `___FILEBASENAME___.m` in the case of his custom GHUnit tests. This did not work for me, examination of Apples templates files led me to use the `___VARIABLE_xxx___Spec.m` as the base template file (in this case `xxx` is `productName` in the  `<key>Options</key>` array and to remove the `MainTemplateFile` key. I assume this key is redundant if there is only one template file to be considered.
 
 I could not find a way of creating an autocomplete field that populates with the classes in the project.
 
