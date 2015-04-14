@@ -21,6 +21,7 @@ describe(@"___VARIABLE_productName:identifier___Tests", ^{
 
     it(@"does something", ^{
         //expectations go here
+        failure(@"incomplete test");
     });
 
     afterEach(^{
