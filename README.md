@@ -38,3 +38,5 @@ I could not find a way of creating an autocomplete field that populates with the
   ~/Library/Developer/Xcode/Templates/
 seems a pretty reliable place for custom templates.
 
+**Further** If you need to change licenses etc then there is a good project that deals with this by [royclarkson](https://github.com/royclarkson/xcode-templates)
+
