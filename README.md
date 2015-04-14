@@ -13,7 +13,7 @@ Xcode will also check the following directory
 
     ~/Library/Developer/Xcode/Templates/
   
-So create that directory it does not exist. Clone the repository move and moce the contents into your local Templates directory,` ~/Library/Developer/Xcode/Templates/` create this if it does not exist.
+So create that directory it does not exist. Clone the repository and move the contents into your local Templates directory,` ~/Library/Developer/Xcode/Templates/` create this if it does not exist.
 
 You should now have the following structure.
 
@@ -28,7 +28,7 @@ There is also more information on Project Templates etc [here](http://blog.borea
 and [here](http://ericasadun.com/2014/06/30/building-custom-extension-templates/)
 
 Considerations
-==============
+--------------
 
 The name of the template file is important, Bob McCune uses `___FILEBASENAME___.m` in the case of his custom GHUnit tests. This did not work for me, examination of Apples templates files led me to use the `___VARIABLE_productName___Spec.m` as the base template file and to remove the `MainTemplateFile` key. I assume this key is redundant if there is only one template file to be considered. 
 
